@@ -1,0 +1,147 @@
+
+
+a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #F8F8F8;
+	color: #555;
+	
+}
+.content_title {
+	color: #333333;
+	font-size: 16px;
+	line-height: 28px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.content_text {
+	color: #555555;
+	font-size: 14px;
+}
+p {
+	padding-left: 0px;
+	color: #333333;
+	font-size: 14px;
+	margin-left: 0px;
+	line-height: 1.3;
+}
+
+a {
+	color: #03a9f4;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+#tab {
+	width: 100%;
+	height: auto;
+	
+	
+	/*
+	border: 1px solid #ddd;
+	box-shadow: 0 0 2px #ddd;
+	/*margin: 100px 0 0 100px;*/
+	/*处理超出的内容 overflow: hidden*/ 
+	
+	overflow: hidden;/***text-align: center;**/
+}
+/*选项卡的头部*/  
+#tab-header {
+	width: 100%;
+	height : auto;
+	margin: 0 auto;
+	background-color: #F7F7F7;
+	text-align: center;
+	position: relative;
+	clear: both;
+}
+#tab-header ul {/**position: absolute;加了这个的话上层的高度无法auto**/
+	width: 100%;
+	height: auto;
+	left: -1px;
+	text-align: center;
+	list-style-type: none;
+}
+#tab-header ul li {
+	width: auto;
+	height: 40px;
+	min-width: 200px;
+	line-height: 40px;
+	padding: 0 1px;
+	border-bottom: 1px solid #dddddd;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	display: inline-block;/**内块级元素居中**/
+}
+#tab-header ul li.selected {
+	background-color: white;
+	color: #03a9f4;
+	font-weight: bolder;
+	border-bottom: 1px solid #03a9f4;
+	border-left: 1px solid #dddddd;
+	border-right: 1px solid #dddddd;
+	padding: 0;
+}
+#tab-header ul li:hover {
+	color: #03a9f4;
+}
+/*主要内容*/  
+#tab-content {
+	width : 100% ;
+	padding-left : 100px;
+	padding-right : 100px;
+}
+#tab-content .dom {
+	display: none;
+	min-height: 400px;
+	width: 100%;
+	padding-top : 20px;
+	padding-bottom :20px;
+	height: auto;
+	overflow: auto;
+}
+#tab-content .dom ul li {
+	float: left;
+	/*background-color: red;*/  
+	margin: 15px 10px;
+	width: 225px;
+}
+#tab-content .dom ul li a:hover {
+	color: orange;
+}
+/***Github模版自带**/
+header {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+	background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+	border-bottom: solid 1px #275da1;
+}
+header h1 {
+	width: 540px;
+	margin-top: 0;
+	margin-bottom: 0.2em;
+	font-size: 72px;
+	font-weight: normal;
+	line-height: 1;
+	color: #fff;
+	letter-spacing: -1px;
+}
+header h2 {
+	width: 540px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 26px;
+	font-weight: normal;
+	line-height: 1.3;
+	color: #9ddcff;
+	letter-spacing: 0;
+}
+.inner {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
